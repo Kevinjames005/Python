@@ -56,6 +56,6 @@ elif (choice == 2 and computer_choice==0) or (choice == 0 and computer_choice ==
 elif choice == computer_choice :
     print("Draw")
 else :
-    print("You have given a invalid Option")
+    print("You have given a invalid Option , You Lose!")
 
 
