@@ -17,6 +17,3 @@ if leap_or_not == True :
     print(f"The year {input_year} is a leap year.")
 else :
     print(f"The year {input_year} is not a leap year.")
-
-# Write your code here.
-# Don't change the function name.
