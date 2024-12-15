@@ -19,9 +19,4 @@ class Scoreboard(Turtle):
         self.clear()
         self.score_update()
 
-    def left_won(self):
-        self.write("Left side won", move=False, align=ALIGNMENT, font=("Courier" , 16 , "normal"))
 
-    def right_won(self):
-        self.home()
-        self.write("Right side won", move=False, align=ALIGNMENT, font=("Courier", 16, "normal"))
