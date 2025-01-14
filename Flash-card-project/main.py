@@ -25,6 +25,7 @@ def random_value_fun():
     canvas.itemconfig(front_image,image=green_image)
     canvas.itemconfig(title_word,text="English",fill="white")
     canvas.itemconfig(word_meaning,text=f"{random_value}",fill="white")
+#-----------------------------------------Save File------------------------------------------#
 
 
 #------------------------------------------UI setup------------------------------------------#
