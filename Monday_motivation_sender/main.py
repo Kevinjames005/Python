@@ -5,7 +5,6 @@ import random
 with open(file="quotes.txt",mode="r") as file:
     quotes = file.readlines()
     stripped_quotes = [line.strip("\n") for line in quotes]
-    print(stripped_quotes)
 
 
 now = dt.datetime.now()
