@@ -32,13 +32,10 @@ parameters = {
 response = requests.get(url="https://www.alphavantage.co/query",params=parameters)
 stock_data = response.json()
 yesterday_close_value = float(stock_data["Time Series (Daily)"][f"{date_yesterday_full}"]["4. close"])
-print(type(yesterday_close_value))
 before_yesterday_close_value = float(stock_data["Time Series (Daily)"][f"{date_before_yesterday_full}"]["4. close"])
-print(before_yesterday_close_value)
 
 change_amount = float(yesterday_close_value) - float(before_yesterday_close_value)
 percentage_of_change = float(change_amount/float(before_yesterday_close_value)*100)
-print(round(percentage_of_change,2))
 
 if percentage_of_change > 0:
     message=f"⬆️{round(percentage_of_change,2)}"
