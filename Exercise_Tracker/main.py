@@ -46,6 +46,5 @@ sheety_params = {
 }
 
 
-#
 sheety_response = requests.post(url=SHEETY_ENDPOINT,json=sheety_params)
 print(sheety_response.text)
