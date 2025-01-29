@@ -36,9 +36,6 @@ data = response.json()
 exercise = data["exercises"][0]["user_input"]
 duration = data["exercises"][0]["duration_min"]
 calories = data["exercises"][0]["nf_calories"]
-print(exercise)
-print(duration)
-print(calories)
 
 sheety_params = {
     "workout":{
